@@ -1,0 +1,57 @@
+BRON: LITERAIR INSTITUUT (LI)
+Opmerking: Deze boekgegevens zijn mogelijk inhomogeen vanwege verschillende publicatiemethoden en veranderingen in auteurschap. Dit betekent dat deze gegevens niet geschikt zijn voor literaire trends. Voor diepgaande literaire analyse verwijzen we naar gehomogeniseerde literaire datasets.
+
+SOURCE: LITERARY INSTITUTE (LI)
+Comment: These book series are inhomogeneous due to various publishing methods and changes in authorship. As a result, these data are not suitable for literary trends. For in-depth literary analysis, we refer to homogenized literary datasets.
+
+BID = Uniek identificatienummer van het boek / Unique identification number of the book
+PD  = Publicatiedatum van het boek (YYYY=jaar,MM=maand,DD=dag) / Publication Date of the book (YYYY=year,MM=month,DD=day)
+AU  = Naam van de auteur van het boek / Name of the author of the book
+GE  = Genre van het boek (bijv. Fic, Rom, SciFi) / Genre of the book (e.g., Fic, Rom, SciFi)
+TL  = Titel van het boek / Title of the book
+PG  = Aantal pagina's in het boek / Number of pages in the book
+RT  = Beoordeling van het boek op een schaal van 1.0-5.0 / Rating of the book on a scale of 1.0-5.0
+LA  = Taal waarin het boek is geschreven (bijv. Nl, Dui, Eng, Spa, Dan, Rus, Fra, Ita, Pol, Rom, Cze, Por) / Language in which the book is written (e.g., Nl, Dui, Eng, Spa, Dan, Rus, Fra, Ita, Pol, Rom, Cze, Por)
+
+# BID,        PD,                       AU,       GE,                                                  TL,   PG,   RT,   LA
+
+  001,  20091212           Pieter de Vries,      Fic,                      Het Raadsel van de Oude Tempel,  157,  3.4,  Nl
+  002,  20011218              Klaus Müller,      Fic,                Das Geheimnis des Magischen Amuletts,  172,  3.4,  Dui
+  003,  19961109,            Sara de Vries,      Rom,                             Liefde in het Maanlicht,  187,  3.8,  Nl
+  004,  19980423,              Lena Schulz,     Hist,                       Geheimnisse der Vergangenheit,  280,  2.7,  Dui
+  005,  20130528,             Laura Bakker,      Rom,                        Liefde onder de Sterrenhemel,  198,  4.7,  Nl
+  006,  20080406,             Kevin Jansen,      Mys,                              De Verdwenen Diamanten,  142,  3.8,  Nl
+  007,  20161017,    Isabella van der Meer,    SciFi,                         De Ruimteavonturen van Luna,  227,  4.2,  Nl
+  008,  20040819,           Susan Thompson,      Mys,                         The Stolen Diamonds Mystery,  147,  3.6,  Eng
+  009,  20031028,              Lisa Visser,      Rom,                                Romantiek aan de Zee,  178,  4.1,  Nl
+  010,  20180308,             Andrea López,      Mys,                                El Código del Enigma,  317,  3.9,  Spa
+  011,  20020614,        Ricardo Rodríguez,      Fan,                      La Búsqueda del Tesoro Perdido,  120,  4.5,  Spa
+  012,  20010223,           Charlotte Smit,     Hist,                         Het Geheim van de Oude Stad,  176,  4.3,  Nl
+  013,  20061009,           Julia Hendriks,      Mys,                           De Raadselachtige Vermist,  121,  3.7,  Nl
+  014,  20150214,               Jan Jansen,      Fic,                Het Mysterie van de Verloren Sleutel,  163,  4.2,  Nl
+  015,  20170514,           Thijs van Dijk,      Fan,                   De Queeste naar het Verloren Rijk,  287,  4.8,  Nl
+  016,  20031215,           Martijn Bakker,      Fic,                    Het Geheim van de Verloren Schat,  199,  4.2,  Nl
+  017,  20160801,            Sophie Dubois,     Hist,                       Les Secrets du Château Ancien,  182,  3.9,  Fra
+  018,  19990903,               Anna Klein,    SciFi,                                  The Cosmic Odyssey,  248,  4.5,  Eng
+  019,  19930319,             Peter Wilson,    SciFi,                         The Interstellar Conspiracy,  312,  3.7,  Eng
+  020,  20020128,             Maria García,      Rom,                                    Amor en la Playa,  194,  4.0,  Spa
+  021,  20190222,              Lars Jensen,      Fic,                    Mysteriet på Den Gamle Herregård,  168,  4.1,  Dan
+  022,  20100814,             Elena Petrov,      Rom,                         Романтика под Лунным Светом,  213,  3.6,  Rus
+  023,  19971208,             Laura Miller,      Fan,                       The Quest for the Lost Amulet,  129,  4.6,  Eng
+  024,  20070412,        Alexander Schmidt,      Mys,                          Das Verschwundene Artefakt,  136,  3.8,  Dui
+  025,  20010527,            Andrej Ivanov,      Fic,                              Тайна Утерянного Ключа,  186,  4.4,  Rus
+  026,  20080506,         Charlotte Møller,     Hist,                        Hemmelighederne fra Fortiden,  203,  4.3,  Dan
+  027,  20000214,              Hans Becker,    SciFi,                               Die Galaktische Reise,  288,  3.5,  Dui
+  028,  20150102,              Sofia Lopez,      Rom,                       Amor Bajo el Cielo Estrellado,  177,  3.9,  Spa
+  029,  20050530,            Julia Fischer,      Fan,                       La Búsqueda del Tesoro Mágico,  194,  4.7,  Spa
+  030,  20111209,            Luca Esposito,      Fic,                   Il Mistero della Chiave Scomparsa,  151,  3.6,  Ita
+  031,  20170317,             Emilie Leroy,    SciFi,                           Les Aventures Galactiques,  189,  4.2,  Fra
+  032,  20130822,            Mateusz Nowak,      Mys,                         Tajemnica Zaginionej Księgi,  175,  3.8,  Pol
+  033,  20030315,          Mariana Andreea,     Hist,                                Secretele Trecutului,  134,  3.7,  Rom
+  034,  20091223,               Ivanovitch,      Fic,                         Le Mystère de la Clé Perdue,  144,  3.5,  Fra
+  035,  20141011,            Andrey Petrov,    SciFi,                                 Космическая Одиссея,  278,  3.9,  Rus
+  036,  20070301,            Antonio Rossi,      Rom,                         L'Amore sotto la Luna Piena,  216,  3.4,  Ita
+  037,  20190414,           Marta Kowalska,      Fan,            Wyprawa w Poszukiwaniu Zaginionej Krainy,  145,  4.8,  Pol
+  038,  19980625,            Claudia Meier,     Hist,                         Geheimnisse der Alten Stadt,  168,  4.6,  Dui
+  039,  20120310,              Petra Novak,      Mys,                       Tajemství Ukradeného Diamantu,  131,  3.9,  Cze
+  040,  20150703,       Sofia Alexandrescu,      Fic,                            Misterul Cheii Disparute,  159,  3.7,  Rom
