@@ -8,7 +8,7 @@ than clone this repository and change directory to the cloned repository and bui
 ```
 git clone https://github.com/Winterwolf365/skills.git
 cd skills
-cargo run --release
+cargo build --release
 ```
 Than the executable file will be located in /target/release/{filename}, and you can find the test data file in the [releases](https://github.com/Winterwolf365/skills/releases) of this repository.
 
