@@ -76,10 +76,8 @@ pub struct Args {
 
 fn main() {
     let args = Args::parse();
-
     let file = fs::read_to_string(&args.file)
         .unwrap_or_else(|_| panic!("Unable to read file: '{}'", &args.file));
-
     let mut books: Vec<Book> = Vec::new();
 
     // in the data file there is first some information
@@ -94,7 +92,6 @@ fn main() {
         }
 
         let mut line: Vec<&str> = data.split(',').map(|line| line.trim()).collect();
-
         let temp_line: Vec<&str> = line.to_vec();
 
         // there are suppost be be 8 values in an line
@@ -125,13 +122,13 @@ fn main() {
                 "%Y%m%d",
             )
             .unwrap(),
-            author: line[2].trim(),
-            genre: line[3].trim(),
-            title: line[4].trim(),
+            author: line[2],
+            genre: line[3],
+            title: line[4],
             total_pages: parse_number(line[5]),
             // the valid range of ratings is 0.0 - 5.0
             rating: parse_number::<f64>(line[6]).clamp(0.0, 5.0),
-            language: line[7].trim(),
+            language: line[7],
         });
     }
 
