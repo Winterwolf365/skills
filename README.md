@@ -1,4 +1,4 @@
-# Skills
+# **Skills**
 Practice for an upcomming competition, by reading data from an txt file.
 
 ## Instalation
