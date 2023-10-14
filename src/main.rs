@@ -141,7 +141,6 @@ fn main() {
 
 fn parse_number<T: std::str::FromStr>(number: &str) -> T {
     let number: String = number
-        .trim()
         .chars()
         .filter(|c| c.is_ascii_digit())
         .collect();
@@ -151,7 +150,7 @@ fn parse_number<T: std::str::FromStr>(number: &str) -> T {
     } else {
         panic!(
             "\"{}\" is not of type {}",
-            number.trim(),
+            number,
             std::any::type_name::<T>()
         );
     }
