@@ -1,7 +1,7 @@
-# skills
+# Skills
 Practice for an upcomming competition, by reading data from an txt file.
 
-## instalation
+## Instalation
 For windows you can download the executable file along the test data file in the [releases](https://github.com/Winterwolf365/skills/releases) of this repository.
 And for other platforms make sure you have [rust](https://rustup.rs) and [git](https://git-scm.com/downloads) installed, 
 than clone this repository and change directory to the cloned repository and build it using cargo for release.
