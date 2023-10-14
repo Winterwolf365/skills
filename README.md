@@ -1,6 +1,18 @@
 # skills
 practice for an upcomming competition, by reading data from an txt file
 
+## instalation
+for windows you can download the executable file along the test data file in the releases of this repository.
+And for other platforms make sure you have [rust](https://rustup.rs/) and [git](https://git-scm.com/downloads/) installed
+than clone this repository and change directory to the cloned repository and build it using cargo for release
+```bash
+git clone https://github.com/Winterwolf365/skills.git
+cd skills
+cargo run --release
+```
+than the executable file will be located in /target/release/{filename} and you can find the test data file in the releases of this repository.
+
+## Usage
 ```
 Usage: skills.exe [OPTIONS] --file <FILE>
 
