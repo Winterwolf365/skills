@@ -10,7 +10,7 @@ git clone https://github.com/Winterwolf365/skills.git
 cd skills
 cargo run --release
 ```
-than the executable file will be located in /target/release/{filename} and you can find the test data file in the releases of this repository.
+than the executable file will be located in /target/release/{filename} and you can find the test data file in the [releases](https://github.com/Winterwolf365/skills/releases/tag/windows) of this repository.
 
 ## Usage
 ```
