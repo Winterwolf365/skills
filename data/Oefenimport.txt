@@ -15,8 +15,8 @@ LA  = Taal waarin het boek is geschreven (bijv. Nl, Dui, Eng, Spa, Dan, Rus, Fra
 
 # BID,        PD,                       AU,       GE,                                                  TL,   PG,   RT,   LA
 
-  001,  20091212           Pieter de Vries,      Fic,                      Het Raadsel van de Oude Tempel,  157,  3.4,  Nl
-  002,  20011218              Klaus Müller,      Fic,                Das Geheimnis des Magischen Amuletts,  172,  3.4,  Dui
+  001,  20091212,          Pieter de Vries,      Fic,                      Het Raadsel van de Oude Tempel,  157,  3.4,  Nl
+  002,  20011218,             Klaus Müller,      Fic,                Das Geheimnis des Magischen Amuletts,  172,  3.4,  Dui
   003,  19961109,            Sara de Vries,      Rom,                             Liefde in het Maanlicht,  187,  3.8,  Nl
   004,  19980423,              Lena Schulz,     Hist,                       Geheimnisse der Vergangenheit,  280,  2.7,  Dui
   005,  20130528,             Laura Bakker,      Rom,                        Liefde onder de Sterrenhemel,  198,  4.7,  Nl
@@ -54,4 +54,4 @@ LA  = Taal waarin het boek is geschreven (bijv. Nl, Dui, Eng, Spa, Dan, Rus, Fra
   037,  20190414,           Marta Kowalska,      Fan,            Wyprawa w Poszukiwaniu Zaginionej Krainy,  145,  4.8,  Pol
   038,  19980625,            Claudia Meier,     Hist,                         Geheimnisse der Alten Stadt,  168,  4.6,  Dui
   039,  20120310,              Petra Novak,      Mys,                       Tajemství Ukradeného Diamantu,  131,  3.9,  Cze
-  040,  20150703,       Sofia Alexandrescu,      Fic,                            Misterul Cheii Disparute,  159,  3.7,  Rom
+  040,  20150703,       Sofia Alexandrescu,      FicMisterul Cheii Disparute,  159,  3.7,  Rom

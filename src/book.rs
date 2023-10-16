@@ -50,7 +50,7 @@ pub fn filer_books(args: Args, mut books: Vec<Book>) -> Vec<Book> {
 
 pub fn sort_books(sort: Sort, mut books: Vec<Book>) -> Vec<Book> {
     match sort {
-        Sort::Id => {}
+        Sort::Id => books.sort_by_key(|book| book.id),
         Sort::PublicationDate => books.sort_by_key(|book| book.publication_date),
         Sort::Author => books.sort_by_key(|book| book.author),
         Sort::Genre => books.sort_by_key(|book| book.genre),
@@ -67,8 +67,8 @@ pub fn sort_books(sort: Sort, mut books: Vec<Book>) -> Vec<Book> {
 
 pub fn format_books(format: Format, books: Vec<Book>) -> String {
     match format {
-        Format::RustStruct => return format!("{:#?}", books),
-        Format::Json => return serde_json::to_string_pretty(&books).unwrap(),
-        Format::Yaml => return serde_yaml::to_string(&books).unwrap(),
+        Format::Debug => format!("{:#?}", books),
+        Format::Json => serde_json::to_string_pretty(&books).unwrap(),
+        Format::Yaml => serde_yaml::to_string(&books).unwrap(),
     }
 }
