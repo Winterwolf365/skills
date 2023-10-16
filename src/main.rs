@@ -95,6 +95,16 @@ fn main() {
     // in the data file there is first some information
     // than an # sign and than the actual data
     let file: Vec<&str> = file.split('#').collect();
+
+    if file.len() < 2 {
+        println!(
+            "{} expected an '#' in the file to seperate the info from data but found none",
+            "error:".red().bold(),
+        );
+
+        std::process::exit(0);
+    }
+
     let info = file[0];
     let data = file[1];
 
@@ -130,43 +140,46 @@ fn main() {
         // the line varaiable should contain 8 values
         if line.len() < 8 {
             println!(
-                "{} expected 8 variables sperated by one comma or at least two spaces but found {} variables \n{} {}",
-                "error:".red().bold(),
+                "{} expected 8 variables sperated by one comma or at least two spaces but found {} variables (skipping line) \n{} {} \n",
+                "warning:".yellow().bold(),
                 line.len(),
                 format!("{} |", index).cyan(),
                 data
             );
 
-            std::process::exit(0);
+            continue;
         }
 
         let publication_date = NaiveDate::parse_from_str(
-            parse_number::<u32>(line[1], 2, index, data)
+            parse_number::<u32>(line[1], 2, index, data).unwrap_or(00000000)
                 .to_string()
                 .as_str(),
             "%Y%m%d",
         )
         .unwrap_or_else(|_| {
             println!(
-                "{} \"{}\"(variable no. 2) is not 8 numbers so it is not able to be parsed to an date \n{} {}",
-                "error:".red().bold(),
+                "{} \"{}\"(variable no. 2) is not 8 numbers so it is not able to be parsed to an date (replacing it with 2000-01-01) \n{} {} \n",
+                "warning:".yellow().bold(),
                 line[1],
                 format!("{} |", index).cyan(),
                 data,
             );
 
-            std::process::exit(0);
+            NaiveDate::parse_from_str(
+                "20000101",
+                "%Y%m%d",
+            ).unwrap()
         });
 
         books.push(Book {
-            id: parse_number(line[0], 1, index, data),
+            id: parse_number(line[0], 1, index, data).unwrap_or(0),
             publication_date,
             author: line[2],
             genre: line[3],
             title: line[4],
-            total_pages: parse_number(line[5], 6, index, data),
+            total_pages: parse_number(line[5], 6, index, data).unwrap_or(0),
             // the valid range of ratings is 0.0 - 5.0
-            rating: parse_number::<f64>(line[6], 7, index, data),
+            rating: parse_number::<f64>(line[6], 7, index, data).unwrap_or(0.0),
             language: line[7],
         });
     }
@@ -178,31 +191,34 @@ fn main() {
     if let Some(write) = &args.write {
         fs::write(write, &books).unwrap_or_else(|error| {
             println!(
-                "{} unable to write to: \"{}\" \n{}",
-                "error:".red().bold(),
+                "{} unable to write to: \"{}\" (not writing) \n{} \n",
+                "warning:".yellow().bold(),
                 write,
                 error,
             );
-
-            std::process::exit(0);
         });
     }
 
     println!("{}", &books);
 }
 
-fn parse_number<T: std::str::FromStr>(number: &str, variable: u32, index: usize, line: &str) -> T {
+fn parse_number<T: std::str::FromStr>(
+    number: &str,
+    variable: u32,
+    index: usize,
+    line: &str,
+) -> Result<T, String> {
     let filterd_number: String = number
         .chars()
         .filter(|c| c.is_ascii_digit() || c == &'.')
         .collect();
 
     if let Ok(filterd_number) = filterd_number.parse::<T>() {
-        filterd_number
+        Ok(filterd_number)
     } else {
         println!(
-            "{} \"{}\"(variable no. {}) is not of type {} \n{} {}",
-            "error:".red().bold(),
+            "{} \"{}\"(variable no. {}) is not of type {} (replacing it with 0) \n{} {} \n",
+            "warning:".yellow().bold(),
             number,
             variable,
             std::any::type_name::<T>(),
@@ -210,6 +226,6 @@ fn parse_number<T: std::str::FromStr>(number: &str, variable: u32, index: usize,
             line,
         );
 
-        std::process::exit(0);
+        Err("not an number".to_string())
     }
 }

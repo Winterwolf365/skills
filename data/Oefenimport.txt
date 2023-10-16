@@ -54,4 +54,4 @@ LA  = Taal waarin het boek is geschreven (bijv. Nl, Dui, Eng, Spa, Dan, Rus, Fra
   037,  20190414,           Marta Kowalska,      Fan,            Wyprawa w Poszukiwaniu Zaginionej Krainy,  145,  4.8,  Pol
   038,  19980625,            Claudia Meier,     Hist,                         Geheimnisse der Alten Stadt,  168,  4.6,  Dui
   039,  20120310,              Petra Novak,      Mys,                       Tajemství Ukradeného Diamantu,  131,  3.9,  Cze
-  040,  20150703,       Sofia Alexandrescu,      FicMisterul Cheii Disparute,  159,  3.7,  Rom
+  040,  20150703,       Sofia Alexandrescu,      Mys,                         FicMisterul Cheii Disparute,  159,  3.7,  Rom
