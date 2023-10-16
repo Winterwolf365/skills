@@ -12,6 +12,8 @@ cargo build --release
 ```
 Then the executable file will be located in /target/release/{filename}, and you can find the test data file in the [releases](https://github.com/Winterwolf365/skills/releases) of this repository.
 
+Tip: add the executable file to your path, so you can use it anywhere in your terminal!
+
 ## Usage
 ```
 Usage: skills.exe [OPTIONS] --read <READ>
