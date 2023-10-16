@@ -1,5 +1,5 @@
 # **Skills**
-Practice for an upcoming competition, by reading data from a txt file.
+Practice for an upcoming competition, by reading data from a TXT file.
 
 ## Installation
 For windows you can download the executable file along the test data file in the [releases](https://github.com/Winterwolf365/skills/releases) of this repository.
